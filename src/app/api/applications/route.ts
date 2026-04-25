@@ -71,6 +71,7 @@ export async function GET() {
         createdAt: "desc",
       },
     });
+    return NextResponse.json(applications);
   } catch (error) {
     return NextResponse.json(
       { error: "Something went wrong🤷‍♂️" },
