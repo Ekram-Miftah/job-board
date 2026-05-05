@@ -31,7 +31,7 @@ export function Navbar() {
                 <DropdownMenuTrigger asChild>
                   <Avatar className="cursor-pointer">
                     <AvatarFallback>
-                      {session.user?.name?.charAt(0).toUpperCase()}
+                      {session?.user?.name?.charAt(0).toUpperCase()}
                     </AvatarFallback>
                   </Avatar>
                 </DropdownMenuTrigger>
