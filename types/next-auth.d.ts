@@ -1,3 +1,4 @@
+// this file teaches typescript abt the extra filds (id and role) we added to sessions and tokens so we dont get errors when we use them
 import NextAuth, { DefaultSession } from "next-auth";
 
 declare module "next-auth" {

@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
 import { auth } from "@/auth";
 import { jobSchema } from "@/lib/validations";
-import { error } from "console";
+
 export async function GET() {
   try {
     const jobs = await prisma.job.findMany({

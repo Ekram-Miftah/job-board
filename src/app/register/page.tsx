@@ -1,6 +1,6 @@
 "use client";
 import { RegisterInput, registerSchema } from "@/lib/validations";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -45,7 +45,7 @@ const RegisterPage = () => {
     }
   };
   return (
-    <div className="min-h-screen bg-slate-50 flext ite justify-center p-4">
+    <div className="min-h-screen bg-slate-50 flex items-center justify-center p-4">
       <Card className="w-full max-w-md">
         <CardHeader>
           <CardTitle className="text-2xl text-center">Create Account</CardTitle>

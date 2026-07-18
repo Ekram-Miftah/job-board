@@ -1,3 +1,6 @@
+//"This file creates and reuses a single database connection so your app talks to the database efficiently
+
+
 import { PrismaClient } from "@prisma/client";
 
 const globalForPrisma = globalThis as unknown as {

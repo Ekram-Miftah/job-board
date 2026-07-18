@@ -1,3 +1,4 @@
+// this file protects our app by making sure only logged in users can see protected pages and logged in users dont see login pages
 import { auth } from "@/auth";
 import { NextResponse } from "next/server";
 export default auth((req) => {
